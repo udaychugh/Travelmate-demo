@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelMate</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="logo-image">
+            <img src="images/travelmate.png" alt="app icon image">
+        </div>
+        <div class="basic-form">
+            <h2>enter car details</h2>
+            <form>
+                <input type="text" placeholder="car name" required>
+                <input type="number" placeholder="model year" required>
+                <input type="number" placeholder="kms driven" required>
+                <select name="feul" id="feul" required>
+                    <option value="select">Feul Type:</option>
+                    <option value="petrol">Petrol</option>
+                    <option value="diesel">Diesel</option>
+                    <option value="cng">CNG</option>
+                    <option value="electric">Electric</option>
+                </select>
+                <select name="condition" id="condition" required>
+                    <option value="condition">Car Condition</option>
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="avg">Average</option>
+                    <option value="bad">Bad</option>
+                    <option value="very">Very Bad</option>
+                </select>
+                <div class="next">
+                    <h2>next</h2>
+                    <button type="submit" onclick="next2()" class="right-arrow"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body></html>
