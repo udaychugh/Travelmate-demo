@@ -1,52 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    cursor: crosshair;
+    cursor:url(../images/tap.cur), auto;
 }
 
-body{
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+body {
     background: #f3f3f3;
     font-family: 'Roboto', sans-serif;
+
 }
 
-h2{
+h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
+
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 30px;
 }
 
-.navbar{
-    display: flex;  
-    padding: 10px 20px;
-    justify-content: space-between;
+.pre-navbar {
+    width: 100%;
     border-bottom: 2px solid #66045E;
+    margin-top: 10px;
 }
 
-.navbar .fa-ellipsis-v{
+.forFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    position: fixed;
+    width: 84vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+
+
+}
+
+.navbar .fa-ellipsis-v {
     font-size: 23px;
     margin-top: 8px;
 }
 
-.container .logo-image img{
+.container .logo-image img {
     height: 12vh;
 }
 
-.container .map-image img{
+.container .map-image img {
     height: 30vh;
-    margin-top: 60px;        
+    margin-top: 60px;
 }
 
-.started{
+.started {
     padding: 20px;
     background-color: #66045E;
     color: white;
@@ -60,22 +81,22 @@ h2{
     margin-top: 60px;
 }
 
-.basic-form{
+.basic-form {
     text-align: center;
     margin-top: 50px;
 }
 
-.basic-form h2{
+.basic-form h2 {
     text-transform: capitalize;
     color: #66045E;
     text-align: center;
 }
 
-form{
+form {
     margin-top: 30px;
 }
 
-form input{
+form input {
     width: calc(100% - 30px);
     padding: 10px;
     background-color: transparent;
@@ -87,12 +108,12 @@ form input{
     font-size: 18px;
 }
 
-form input::placeholder{
+form input::placeholder {
     text-transform: capitalize;
     color: #DB8DB9;
 }
 
-form select{
+form select {
     width: calc(100% - 8px);
     padding: 10px;
     background-color: transparent;
@@ -103,7 +124,7 @@ form select{
     color: #DB8DB9;
 }
 
-.next{
+.next {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
@@ -111,7 +132,7 @@ form select{
 }
 
 
-.next .right-arrow{
+.next .right-arrow {
     padding: 20px;
     background-color: #66045E;
     color: white;
@@ -121,7 +142,7 @@ form select{
     border-radius: 50%;
 }
 
-.threebuttons{
+.threebuttons {
     padding: 10px;
     background-color: #66045E;
     color: white;
@@ -135,15 +156,49 @@ form select{
     margin-top: 60px;
 }
 
-.buttonsJour{
+.buttonsJour {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-.fa-exchange-alt{
+.fa-exchange-alt {
     font-size: 32px;
     margin-bottom: 20px;
     transform: rotate(90deg);
-    
+
+}
+
+.appnavbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    overflow-x: inherit;
+}
+
+
+div.scrollmenu {
+    background-color: #66045E;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.active {
+    color: #f6f6f6 !important;
+    border-bottom: 4px solid #f6f6f6 !important;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: #f6f6f6;
+    border-bottom: 4px solid transparent;
+    text-align: center;
+    padding: 14px;
+    margin-right: 4px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #DB8DB9;
 }
