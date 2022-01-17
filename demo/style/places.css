@@ -1,0 +1,19 @@
+.places{
+    padding: 10px;
+}
+
+.flexyFragment{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #66045E;
+}
+
+#restro, #hotel{
+    padding: 10px 0;
+}
+
