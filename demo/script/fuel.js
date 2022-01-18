@@ -99,5 +99,5 @@ if (price1 > price2) {
     document.getElementById("fueldiff").innerHTML = diff.toFixed(2) + " profit";
     document.getElementById("fueldiff").style.color = "green";
 } else {
-    document.getElementById("fueldiff").innerHTML = "Nor Profit Neither Loss";
+    document.getElementById("fueldiff").innerHTML = "neither profit nor loss";
 }
