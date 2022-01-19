@@ -177,6 +177,16 @@ form select {
     z-index: 9999;    
 }
 
+#sos{
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+    position: fixed;
+    margin-top: 10px;
+    margin-left: 5px;
+    background-color: #66045E;
+}
+
 
 div.scrollmenu {
     background-color: #66045E;
@@ -187,6 +197,7 @@ div.scrollmenu {
 .active {
     color: #f6f6f6 !important;
     border-bottom: 4px solid #f6f6f6 !important;
+    margin-left: 50px;
 }
 
 div.scrollmenu a {
@@ -243,3 +254,16 @@ div.scrollmenu a:hover {
     background: #DB8DB9;
     color: #f1f1f1;
 }
+
+.emergency1, .emergency2, .emergency3{
+    padding: 10px;
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #66045E;
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
