@@ -10,19 +10,18 @@ function next2() {
     location.replace("journey.html");
 }
 
-function showWorks(){
+function showWorks() {
     location.replace("works.html");
 }
 
-function help(){
+function help() {
     location.replace("help.html");
 }
 
-function gotomaps(){
+function gotomaps() {
     location.replace("map.html");
     var city1 = document.getElementById("location").value;
     var city2 = document.getElementById("destination").value;
     localStorage.setItem("city1", city1);
     localStorage.setItem("city2", city2);
 }
-
