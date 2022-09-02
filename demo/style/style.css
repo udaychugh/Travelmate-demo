@@ -41,6 +41,12 @@ h2 {
 .forFlex {
     display: flex;
     justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.forFlex a i{
+    font-size: 30px;
+    color: black;
 }
 
 .navbar {
